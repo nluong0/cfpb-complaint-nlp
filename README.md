@@ -1,4 +1,4 @@
-# Modeling and Sentiment Analysis of the CFPB Consumer Complaints
+# Topic Modeling and Sentiment Analysis of the CFPB Consumer Complaints
 Topic modeling and sentiment analysis of CFPB complaint narratives.
 
 ## Installation
@@ -19,9 +19,9 @@ pip3 install -r requirements.txt
 __insert-filename.py__ insert file description
 
 ## Usage
-To run using an archived version of the data and best model:
+To run:
 ```bash
-python3 main.py -m
+python3 insert-filename.py -tag
 ```
 
 ## Authors
