@@ -2,6 +2,7 @@ import json
 import string
 from nltk.tokenize import word_tokenize 
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 def preprocessing():
 
@@ -9,7 +10,8 @@ def preprocessing():
     data = json.load(f)
 
     punctuation = str.maketrans('', '', string.punctuation)
-    stop_words = set(stopwords.words('english'))  
+    stop_words = set(stopwords.words('english'))
+    wnl = WordNetLemmatizer()
 
     for id, narrative in data:
         # Preprocessing tasks
@@ -19,6 +21,7 @@ def preprocessing():
         words = [w for w in words if not w in stop_words] # remove stopwords
         words = [w if w  != len(w) * w[0] else '~' for w in words] # replace 'xxx' with '~' 
         words = [w if not w.isdigit() else '*' for w in words] # replace numbers with '*'
+        words = [wnl.lemmatize(w) for w in words]
 
         # Replace narratives in data with preprocessed tasks
-        data[id] = words 
+        data[id] = words
