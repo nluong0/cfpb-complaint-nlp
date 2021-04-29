@@ -4,6 +4,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+
 def preprocessing():
 
     f = open('narratives.json')
@@ -25,3 +26,16 @@ def preprocessing():
 
         # Replace narratives in data with preprocessed tasks
         data[id] = words
+    
+    return data
+
+
+def embedding():
+
+    data = preprocessing()
+    docs = list(data.values())
+    
+    dictionary = Dictionary(docs)  
+    corpus = [dictionary.doc2bow(doc) for doc in docs]
+
+    return dictionary, corpus
