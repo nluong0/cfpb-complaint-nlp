@@ -1,0 +1,254 @@
+,complaint_type,topic_cat,top_cat
+0,Bank account or service,0,495
+1,Bank account or service,1,144
+2,Bank account or service,2,58
+3,Bank account or service,3,200
+4,Bank account or service,4,1518
+5,Bank account or service,5,13
+6,Bank account or service,6,344
+7,Bank account or service,7,88
+8,Bank account or service,8,72
+9,Bank account or service,9,102
+10,Bank account or service,10,193
+11,Bank account or service,11,20
+12,Bank account or service,12,367
+13,Bank account or service,13,688
+14,Bank account or service,14,198
+15,Checking or savings account,0,1024
+16,Checking or savings account,1,330
+17,Checking or savings account,2,166
+18,Checking or savings account,3,410
+19,Checking or savings account,4,3119
+20,Checking or savings account,5,27
+21,Checking or savings account,6,654
+22,Checking or savings account,7,192
+23,Checking or savings account,8,182
+24,Checking or savings account,9,260
+25,Checking or savings account,10,380
+26,Checking or savings account,11,35
+27,Checking or savings account,12,897
+28,Checking or savings account,13,1312
+29,Checking or savings account,14,362
+30,Consumer Loan,0,269
+31,Consumer Loan,1,99
+32,Consumer Loan,2,63
+33,Consumer Loan,3,119
+34,Consumer Loan,4,945
+35,Consumer Loan,5,13
+36,Consumer Loan,6,146
+37,Consumer Loan,7,24
+38,Consumer Loan,8,27
+39,Consumer Loan,9,64
+40,Consumer Loan,10,109
+41,Consumer Loan,11,14
+42,Consumer Loan,12,297
+43,Consumer Loan,13,555
+44,Consumer Loan,14,141
+45,Credit card,0,616
+46,Credit card,1,103
+47,Credit card,2,73
+48,Credit card,3,242
+49,Credit card,4,2529
+50,Credit card,5,17
+51,Credit card,6,266
+52,Credit card,7,35
+53,Credit card,8,42
+54,Credit card,9,78
+55,Credit card,10,134
+56,Credit card,11,14
+57,Credit card,12,407
+58,Credit card,13,799
+59,Credit card,14,174
+60,Credit card or prepaid card,0,1740
+61,Credit card or prepaid card,1,265
+62,Credit card or prepaid card,2,238
+63,Credit card or prepaid card,3,542
+64,Credit card or prepaid card,4,7090
+65,Credit card or prepaid card,5,39
+66,Credit card or prepaid card,6,737
+67,Credit card or prepaid card,7,134
+68,Credit card or prepaid card,8,114
+69,Credit card or prepaid card,9,252
+70,Credit card or prepaid card,10,454
+71,Credit card or prepaid card,11,46
+72,Credit card or prepaid card,12,1312
+73,Credit card or prepaid card,13,2226
+74,Credit card or prepaid card,14,569
+75,Credit reporting,0,1034
+76,Credit reporting,1,577
+77,Credit reporting,2,354
+78,Credit reporting,3,569
+79,Credit reporting,4,3202
+80,Credit reporting,5,80
+81,Credit reporting,6,587
+82,Credit reporting,7,150
+83,Credit reporting,8,135
+84,Credit reporting,9,194
+85,Credit reporting,10,220
+86,Credit reporting,11,75
+87,Credit reporting,12,818
+88,Credit reporting,13,1340
+89,Credit reporting,14,566
+90,"Credit reporting, credit repair services, or other personal consumer reports",0,9166
+91,"Credit reporting, credit repair services, or other personal consumer reports",1,4774
+92,"Credit reporting, credit repair services, or other personal consumer reports",2,2727
+93,"Credit reporting, credit repair services, or other personal consumer reports",3,3583
+94,"Credit reporting, credit repair services, or other personal consumer reports",4,23919
+95,"Credit reporting, credit repair services, or other personal consumer reports",5,760
+96,"Credit reporting, credit repair services, or other personal consumer reports",6,4560
+97,"Credit reporting, credit repair services, or other personal consumer reports",7,1320
+98,"Credit reporting, credit repair services, or other personal consumer reports",8,1290
+99,"Credit reporting, credit repair services, or other personal consumer reports",9,2122
+100,"Credit reporting, credit repair services, or other personal consumer reports",10,2607
+101,"Credit reporting, credit repair services, or other personal consumer reports",11,957
+102,"Credit reporting, credit repair services, or other personal consumer reports",12,8112
+103,"Credit reporting, credit repair services, or other personal consumer reports",13,10207
+104,"Credit reporting, credit repair services, or other personal consumer reports",14,4108
+105,Debt collection,0,3533
+106,Debt collection,1,1487
+107,Debt collection,2,1037
+108,Debt collection,3,1652
+109,Debt collection,4,14513
+110,Debt collection,5,335
+111,Debt collection,6,2427
+112,Debt collection,7,623
+113,Debt collection,8,562
+114,Debt collection,9,1236
+115,Debt collection,10,1447
+116,Debt collection,11,266
+117,Debt collection,12,4939
+118,Debt collection,13,6555
+119,Debt collection,14,2068
+120,"Money transfer, virtual currency, or money service",0,462
+121,"Money transfer, virtual currency, or money service",1,167
+122,"Money transfer, virtual currency, or money service",2,97
+123,"Money transfer, virtual currency, or money service",3,199
+124,"Money transfer, virtual currency, or money service",4,1380
+125,"Money transfer, virtual currency, or money service",5,20
+126,"Money transfer, virtual currency, or money service",6,332
+127,"Money transfer, virtual currency, or money service",7,91
+128,"Money transfer, virtual currency, or money service",8,57
+129,"Money transfer, virtual currency, or money service",9,109
+130,"Money transfer, virtual currency, or money service",10,142
+131,"Money transfer, virtual currency, or money service",11,20
+132,"Money transfer, virtual currency, or money service",12,414
+133,"Money transfer, virtual currency, or money service",13,582
+134,"Money transfer, virtual currency, or money service",14,215
+135,Money transfers,0,44
+136,Money transfers,1,13
+137,Money transfers,2,10
+138,Money transfers,3,32
+139,Money transfers,4,127
+140,Money transfers,5,2
+141,Money transfers,6,29
+142,Money transfers,7,13
+143,Money transfers,8,7
+144,Money transfers,9,7
+145,Money transfers,10,20
+146,Money transfers,11,2
+147,Money transfers,12,36
+148,Money transfers,13,86
+149,Money transfers,14,24
+150,Mortgage,0,2052
+151,Mortgage,1,877
+152,Mortgage,2,511
+153,Mortgage,3,701
+154,Mortgage,4,8206
+155,Mortgage,5,46
+156,Mortgage,6,1116
+157,Mortgage,7,147
+158,Mortgage,8,191
+159,Mortgage,9,456
+160,Mortgage,10,558
+161,Mortgage,11,79
+162,Mortgage,12,2110
+163,Mortgage,13,4599
+164,Mortgage,14,1265
+165,Other financial service,0,7
+166,Other financial service,1,6
+167,Other financial service,2,3
+168,Other financial service,3,7
+169,Other financial service,4,29
+170,Other financial service,6,5
+171,Other financial service,7,1
+172,Other financial service,9,1
+173,Other financial service,10,3
+174,Other financial service,12,7
+175,Other financial service,13,9
+176,Other financial service,14,5
+177,Payday loan,0,47
+178,Payday loan,1,17
+179,Payday loan,2,14
+180,Payday loan,3,21
+181,Payday loan,4,144
+182,Payday loan,5,2
+183,Payday loan,6,43
+184,Payday loan,7,15
+185,Payday loan,8,9
+186,Payday loan,9,21
+187,Payday loan,10,16
+188,Payday loan,11,4
+189,Payday loan,12,51
+190,Payday loan,13,101
+191,Payday loan,14,28
+192,"Payday loan, title loan, or personal loan",0,271
+193,"Payday loan, title loan, or personal loan",1,80
+194,"Payday loan, title loan, or personal loan",2,72
+195,"Payday loan, title loan, or personal loan",3,98
+196,"Payday loan, title loan, or personal loan",4,810
+197,"Payday loan, title loan, or personal loan",5,12
+198,"Payday loan, title loan, or personal loan",6,208
+199,"Payday loan, title loan, or personal loan",7,51
+200,"Payday loan, title loan, or personal loan",8,41
+201,"Payday loan, title loan, or personal loan",9,63
+202,"Payday loan, title loan, or personal loan",10,101
+203,"Payday loan, title loan, or personal loan",11,18
+204,"Payday loan, title loan, or personal loan",12,344
+205,"Payday loan, title loan, or personal loan",13,544
+206,"Payday loan, title loan, or personal loan",14,132
+207,Prepaid card,0,37
+208,Prepaid card,1,5
+209,Prepaid card,2,9
+210,Prepaid card,3,15
+211,Prepaid card,4,127
+212,Prepaid card,6,44
+213,Prepaid card,7,4
+214,Prepaid card,8,7
+215,Prepaid card,9,16
+216,Prepaid card,10,22
+217,Prepaid card,12,66
+218,Prepaid card,13,88
+219,Prepaid card,14,12
+220,Student loan,0,838
+221,Student loan,1,293
+222,Student loan,2,304
+223,Student loan,3,270
+224,Student loan,4,2574
+225,Student loan,5,18
+226,Student loan,6,489
+227,Student loan,7,76
+228,Student loan,8,97
+229,Student loan,9,505
+230,Student loan,10,142
+231,Student loan,11,36
+232,Student loan,12,768
+233,Student loan,13,1640
+234,Student loan,14,307
+235,Vehicle loan or lease,0,374
+236,Vehicle loan or lease,1,107
+237,Vehicle loan or lease,2,65
+238,Vehicle loan or lease,3,146
+239,Vehicle loan or lease,4,1335
+240,Vehicle loan or lease,5,12
+241,Vehicle loan or lease,6,205
+242,Vehicle loan or lease,7,41
+243,Vehicle loan or lease,8,27
+244,Vehicle loan or lease,9,73
+245,Vehicle loan or lease,10,122
+246,Vehicle loan or lease,11,22
+247,Vehicle loan or lease,12,393
+248,Vehicle loan or lease,13,766
+249,Vehicle loan or lease,14,181
+250,Virtual currency,6,1
+251,Virtual currency,11,1
+252,Virtual currency,13,1
