@@ -1,31 +1,62 @@
-from gensim.models import LdaModel
-from preprocessing import embedding
 from pprint import pprint
+from gensim.models import LdaModel, CoherenceModel
+from preprocessing import get_sample, embedding
 
-def run_model(num_topics, chunksize, passes, iterations, eval_every):
+DATA_DIR = '/data/'
+PRODUCTS_FILEPATH = 'products.json'
+COMPLAINTS_FILEPATH = 'complaints_full.json'
+NGRAMS = 2
 
-    data, dictionary, corpus = embedding()
 
-    # Make a index to word dictionary.
-    temp = dictionary[0]  # This is only to "load" the dictionary.
-    id2word = dictionary.id2token
+def load_and_sample_data(products_filepath, complaints_filepath, sample_size):
+    # Load original complaint types
+    g = open(products_filepath)
+    complaint_types = json.load(g)
 
-    model = LdaModel(
-        corpus=corpus,
-        id2word=id2word,
-        chunksize=chunksize,
-        alpha='auto',
-        eta='auto',
-        iterations=iterations,
-        num_topics=num_topics,
-        passes=passes,
-        eval_every=eval_every
+    # Load full complaints data
+    h = open(complaints_filepath)
+    narratives = json.load(h)
+
+    # Create sample for defining model
+    sample_keys = get_sample(narratives, sample_size)
+    sample_data = {i: narratives[i] for i in sample_keys}
+
+    # Save remainder of complaints for evaluation
+    eval_keys = list(set(narratives.keys())-set(sample_keys))
+    eval_data = {i: narratives[i] for i in eval_keys}
+
+    return sample_data, eval_data
+
+
+def run_model():
+
+    # Load and sample data 
+    products_filepath = DATA_DIR + PRODUCTS_FILEPATH
+    complaints_filepath = DATA_DIR + COMPLAINTS_FILEPATH
+    sample_data, eval_data = load_and_sample_data(products_filepath, complaints_filepath)
+
+    # Preprocess and create word embeddings
+    full_data, full_docs, full_dictionary, full_corpus = embedding(sample_data, NGRAMS)
+    full_temp = full_dictionary[0] 
+    full_id2word = full_dictionary.id2token
+
+    # Build LDA Model with params from grid search
+    full_model = LdaModel(corpus=full_corpus,
+                            id2word=full_id2word,
+                            num_topics=15,
+                            chunksize=1000,
+                            passes=30,
+                            iterations=25,
+                            random_state=1
     )
+    full_model.save('/model/full_lda.model')
 
-    top_topics = model.top_topics(corpus)
+    # Calculate coherence and log perplexity
+    coherence_model = CoherenceModel(model=full_model, 
+                                     texts=full_docs, 
+                                     dictionary=full_dictionary, 
+                                     coherence='c_v')
+    coherence_lda = coherence_model.get_coherence()
+    print('Coherence Score: ', coherence_lda)
+    print('Perplexity Score: ', full_model.log_perplexity(full_corpus))
 
-    # Average topic coherence is the sum of topic coherences of all topics, divided by the number of topics.
-    avg_topic_coherence = sum([t[1] for t in top_topics]) / num_topics
-    print('Average topic coherence: %.4f.' % avg_topic_coherence)
-
-    pprint(top_topics)
