@@ -60,3 +60,5 @@ def run_model():
     print('Coherence Score: ', coherence_lda)
     print('Perplexity Score: ', full_model.log_perplexity(full_corpus))
 
+    return full_model, full_docs, full_dictionary, full_corpus
+
