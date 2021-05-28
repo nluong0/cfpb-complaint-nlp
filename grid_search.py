@@ -1,3 +1,7 @@
+'''
+Performs grid search to determine model specification.
+'''
+
 import json
 from datetime import datetime
 from gensim.models import LdaModel, CoherenceModel

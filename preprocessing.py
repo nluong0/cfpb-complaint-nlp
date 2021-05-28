@@ -1,3 +1,7 @@
+'''
+Helper functions to perform all preprocessing necessary for input to LDA model.
+'''
+
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')

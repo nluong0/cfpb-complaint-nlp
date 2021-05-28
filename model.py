@@ -1,3 +1,7 @@
+'''
+Builds and runs model resulting from grid search on full data and performs evaluation
+'''
+
 from pprint import pprint
 from gensim.models import LdaModel, CoherenceModel
 from preprocessing import get_sample, embedding

@@ -1,3 +1,7 @@
+'''
+Extract only complaint ID and complaint narratives from JSON returned from CFPB API query.
+'''
+
 import json
 
 def load_text_data():
