@@ -1,5 +1,5 @@
-# Topic Modeling and Sentiment Analysis of the CFPB Consumer Complaints
-Topic modeling and sentiment analysis of CFPB complaint narratives.
+# Topic Modeling of the CFPB Consumer Complaints
+Extracting latent underlying topics from CFPB consumer complaint narratives.
 
 ## Installation
 
