@@ -1,5 +1,5 @@
-# Topic Modeling of the CFPB Consumer Complaints
-Extracting latent underlying topics from CFPB consumer complaint narratives.
+# Topic Modeling of CFPB Consumer Complaints
+Extracting latent topics from CFPB consumer complaint narratives.
 
 ## Installation
 
